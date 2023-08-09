@@ -21,10 +21,10 @@ body {
   height: 100vh;
 
   @media (min-width: 1440px) {
-    background: $violet url("../images/bg-desktop.svg") -50px -10px no-repeat;
+    background: $violet url("../images/bg-desktop.svg") -35px 0px no-repeat;
     // background-position: center -50px;
-    // background-size: 90%;
-    background-size: cover;
+    background-size: 90%;
+    background-size: contain;
     // height: auto;
   }
 }
@@ -33,7 +33,7 @@ main {
   max-width: 350px;
   margin: auto;
   padding: 1.4rem 1.2rem;
-//   border: 1px solid red;
+  //   border: 1px solid red;
   height: 100vh;
 
   @media (min-width: 1440px) {
@@ -63,7 +63,7 @@ main {
 
         @media (min-width: 1440px) {
           width: 215px;
-          transform: translateY(-45px);
+          transform: translateY(-48px);
           margin-left: -2px;
         }
       }
@@ -79,13 +79,13 @@ main {
     }
     .section-image-wrapper {
       margin-top: 4px;
-      margin-left: 6px;
+      margin-left: 4px;
       margin-bottom: 4.1rem;
       width: 96%;
 
       @media (min-width: 1440px) {
         margin-left: -0.5rem;
-        padding-top: 2rem;
+        padding-top: 1.8rem;
         margin-bottom: 0;
       }
 
@@ -108,18 +108,19 @@ main {
       }
 
       h1 {
-        font-size: 24px;
+        font-size: 23px;
         line-height: 33px;
+        width: 98%;
         margin-top: -3px;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.1rem;
         font-family: $heading-font;
 
         @media (min-width: 1440px) {
-          font-size: 2.22rem;
-          padding: 2.5rem 0 1rem;
+          font-size: 2.6rem;
+          padding: 2.4rem 0 1rem;
           font-size: 40px;
-          margin-bottom: 0.5rem;
-          line-height: 58px;
+          margin-bottom: 0.3rem;
+          line-height: 59px;
         }
       }
       p {
@@ -133,7 +134,7 @@ main {
         @media (min-width: 1440px) {
           line-height: 26px;
           font-size: 18px;
-          width: 98%;
+          width: 97%;
           margin-bottom: 1.6rem;
         }
       }
@@ -146,7 +147,7 @@ main {
         color: $violet;
         border-radius: 25px;
         padding: 0.7rem 0;
-        width: 65%;
+        width: 63%;
         margin-bottom: 4rem;
         box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.432);
         transition: all 150ms linear;
@@ -186,18 +187,19 @@ main {
       place-content: center;
       width: 26px;
       height: 26px;
-      margin-right: 12px;
+      margin-right: 10px;
       margin-bottom: -5px;
       cursor: pointer;
+      transition: all 150ms linear;
 
       &:last-child {
-        margin-right: 0;
+        margin-right: 5px;
       }
 
       @media (min-width: 1440px) {
-        width: 38px;
-        height: 38px;
-        margin-right: 16px;
+        width: 39px;
+        height: 39px;
+        margin-right: 17px;
 
         &:last-child {
           margin-right: 8px;
@@ -207,19 +209,21 @@ main {
       &:hover,
       &:focus {
         background: transparent;
-        color: white;
         border: 1px solid $soft-magenta;
+
+        svg {
+          fill: $soft-magenta;
+        }
       }
 
       svg {
         width: 16px;
+        fill: white;
+        pointer-events: none;
+        margin: auto;
 
         @media (min-width: 1440px) {
-          width: 18px;
-        }
-
-        .path-color {
-          color: red;
+          width: 21px;
         }
       }
     }
