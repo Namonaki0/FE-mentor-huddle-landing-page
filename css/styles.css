@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  padding: 0.2rem 0 2rem;
+  background: hsl(257deg, 40%, 49%) url("../images/bg-mobile.svg") no-repeat;
+  background-position: top center;
+  color: white;
+  height: 100vh;
+}
+@media (min-width: 1440px) {
+  body {
+    background: hsl(257deg, 40%, 49%) url("../images/bg-desktop.svg") -50px -10px no-repeat;
+    background-size: cover;
+  }
+}
+
+main {
+  max-width: 350px;
+  margin: auto;
+  padding: 1.4rem 1.2rem;
+  height: 100vh;
+}
+@media (min-width: 1440px) {
+  main {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0rem 4.5rem;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+}
+main header {
+  margin-bottom: 3.4rem;
+}
+@media (min-width: 1440px) {
+  main header {
+    margin-bottom: 0;
+  }
+}
+main header .logo-wrapper {
+  text-align: left;
+}
+main header .logo-wrapper .logo {
+  width: 130px;
+  margin-top: 5px;
+}
+@media (min-width: 1440px) {
+  main header .logo-wrapper .logo {
+    width: 215px;
+    transform: translateY(-45px);
+    margin-left: -2px;
+  }
+}
+main section {
+  text-align: center;
+}
+@media (min-width: 1440px) {
+  main section {
+    display: flex;
+    justify-content: center;
+  }
+}
+main section .section-image-wrapper {
+  margin-top: 4px;
+  margin-left: 6px;
+  margin-bottom: 4.1rem;
+  width: 96%;
+}
+@media (min-width: 1440px) {
+  main section .section-image-wrapper {
+    margin-left: -0.5rem;
+    padding-top: 2rem;
+    margin-bottom: 0;
+  }
+}
+main section .section-image-wrapper img {
+  display: block;
+  width: 100%;
+  margin-right: -12px;
+}
+@media (min-width: 1440px) {
+  main section .section-image-wrapper img {
+    width: 710px;
+    margin-left: 8px;
+  }
+}
+@media (min-width: 1440px) {
+  main section .section-info-wrapper {
+    text-align: left;
+    padding: 2.7rem 0rem 3rem 3.9rem;
+  }
+}
+main section .section-info-wrapper h1 {
+  font-size: 24px;
+  line-height: 33px;
+  margin-top: -3px;
+  margin-bottom: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 1440px) {
+  main section .section-info-wrapper h1 {
+    font-size: 2.22rem;
+    padding: 2.5rem 0 1rem;
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+    line-height: 58px;
+  }
+}
+main section .section-info-wrapper p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(228, 228, 228);
+  line-height: 23px;
+  width: 98%;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 1440px) {
+  main section .section-info-wrapper p {
+    line-height: 26px;
+    font-size: 18px;
+    width: 98%;
+    margin-bottom: 1.6rem;
+  }
+}
+main section .section-info-wrapper button {
+  all: unset;
+  font-family: "Poppins", sans-serif;
+  background: white;
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(257deg, 40%, 49%);
+  border-radius: 25px;
+  padding: 0.7rem 0;
+  width: 65%;
+  margin-bottom: 4rem;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.432);
+  transition: all 150ms linear;
+  cursor: pointer;
+}
+@media (min-width: 1440px) {
+  main section .section-info-wrapper button {
+    width: 37%;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin-left: 4px;
+    font-size: 17px;
+    border-radius: 28px;
+  }
+}
+main section .section-info-wrapper button:hover, main section .section-info-wrapper button:focus {
+  background: hsl(300deg, 69%, 71%);
+  color: white;
+}
+main footer {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1440px) {
+  main footer {
+    justify-content: flex-end;
+    transform: translateY(20px);
+  }
+}
+main footer span {
+  border: 1px solid white;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  width: 26px;
+  height: 26px;
+  margin-right: 12px;
+  margin-bottom: -5px;
+  cursor: pointer;
+}
+main footer span:last-child {
+  margin-right: 0;
+}
+@media (min-width: 1440px) {
+  main footer span {
+    width: 38px;
+    height: 38px;
+    margin-right: 16px;
+  }
+  main footer span:last-child {
+    margin-right: 8px;
+  }
+}
+main footer span:hover, main footer span:focus {
+  background: transparent;
+  color: white;
+  border: 1px solid hsl(300deg, 69%, 71%);
+}
+main footer span svg {
+  width: 16px;
+}
+@media (min-width: 1440px) {
+  main footer span svg {
+    width: 18px;
+  }
+}
+main footer span svg .path-color {
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */
