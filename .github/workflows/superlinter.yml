@@ -2,8 +2,6 @@
 name: Super-Linter
 
 on: push
-paths-ignore:
-  - "css/**"
 
 jobs:
   super-linter:
@@ -18,3 +16,6 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+paths-ignore:
+  - "css/**"

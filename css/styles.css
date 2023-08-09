@@ -100,8 +100,8 @@ main section .section-image-wrapper img {
   }
 }
 main section .section-info-wrapper h1 {
-  font-size: 23px;
-  line-height: 33px;
+  font-size: 24px;
+  line-height: 32px;
   width: 98%;
   margin-top: -3px;
   margin-bottom: 1.1rem;
@@ -109,9 +109,8 @@ main section .section-info-wrapper h1 {
 }
 @media (min-width: 1440px) {
   main section .section-info-wrapper h1 {
-    font-size: 2.6rem;
     padding: 2.4rem 0 1rem;
-    font-size: 40px;
+    font-size: 41px;
     margin-bottom: 0.3rem;
     line-height: 59px;
   }
@@ -204,7 +203,7 @@ main footer span:hover svg, main footer span:focus svg {
   fill: hsl(300deg, 69%, 71%);
 }
 main footer span svg {
-  width: 16px;
+  width: 15px;
   fill: white;
   pointer-events: none;
   margin: auto;
