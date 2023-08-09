@@ -19,7 +19,7 @@
 ![mobile](./completed_screenshots/mobile.PNG)
 ![desktop](./completed_screenshots/desktop.PNG)
 
-<a href="https://fementor-af-nft-preview-card.netlify.app">Live Site URL</a>
+<a href="https://fementor-af-huddle-landing-page.netlify.app">Live Site URL</a>
 
 ---
 

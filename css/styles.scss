@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400&display=swap");
 
 $violet: hsl(257, 40%, 49%);
 $soft-magenta: hsl(300, 69%, 71%);
-$heading-font: "Poppins", sans-serif;
-$body-font: "Open Sans", sans-serif;
+$heading-font: "Poppins",
+sans-serif;
+$body-font: "Open Sans",
+sans-serif;
 
 * {
   margin: 0;
@@ -22,10 +24,8 @@ body {
 
   @media (min-width: 1440px) {
     background: $violet url("../images/bg-desktop.svg") -35px 0px no-repeat;
-    // background-position: center -50px;
     background-size: 90%;
     background-size: contain;
-    // height: auto;
   }
 }
 
@@ -33,7 +33,6 @@ main {
   max-width: 350px;
   margin: auto;
   padding: 1.4rem 1.2rem;
-  //   border: 1px solid red;
   height: 100vh;
 
   @media (min-width: 1440px) {
@@ -51,11 +50,11 @@ main {
     @media (min-width: 1440px) {
       margin-bottom: 0;
     }
+
     .logo-wrapper {
       text-align: left;
 
-      @media (min-width: 1440px) {
-      }
+      @media (min-width: 1440px) {}
 
       .logo {
         width: 130px;
@@ -77,6 +76,7 @@ main {
       display: flex;
       justify-content: center;
     }
+
     .section-image-wrapper {
       margin-top: 4px;
       margin-left: 4px;
@@ -123,6 +123,7 @@ main {
           line-height: 59px;
         }
       }
+
       p {
         font-weight: 400;
         font-size: 16px;
@@ -138,6 +139,7 @@ main {
           margin-bottom: 1.6rem;
         }
       }
+
       button {
         all: unset;
         font-family: $heading-font;
